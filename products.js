@@ -5,7 +5,7 @@ const productsData = [{
     id: 1,
     name: "پیراهن آستین‌کوتاه",
     category: "پیراهن",
-    image: "https://placehold.co/400x400/1a1a1a/ff8c00?text=Shirt",
+    image: "https://placehold.co/400x400/1a1a1a/FF6B00?text=Shirt",
     tag: "پرفروش",
     colors: [{
         name: "سفید",
@@ -23,22 +23,17 @@ const productsData = [{
         price: 550000,
         sizes: { "S": 3, "M": 5, "L": 0, "XL": 4, "XXL": 2 }
     }, {
-        name: "قرمز",
-        hex: "#c0392b",
-        price: 550000,
-        sizes: { "S": 0, "M": 0, "L": 0, "XL": 0, "XXL": 0 }
-    }, {
-        name: "سبز",
-        hex: "#27ae60",
-        price: 540000,
+        name: "نارنجی",
+        hex: "#e67e22",
+        price: 530000,
         sizes: { "S": 4, "M": 6, "L": 3, "XL": 0, "XXL": 0 }
     }]
 }, {
     id: 2,
     name: "تیشرت اتمی",
     category: "تیشرت",
-    image: "https://placehold.co/400x400/1a1a1a/ff8c00?text=T-Shirt",
-    tag: "",
+    image: "https://placehold.co/400x400/1a1a1a/FF6B00?text=T-Shirt",
+    tag: "جدید",
     colors: [{
         name: "سفید",
         hex: "#ffffff",
@@ -59,8 +54,8 @@ const productsData = [{
     id: 3,
     name: "هودی انرژی",
     category: "هودی",
-    image: "https://placehold.co/400x400/1a1a1a/ff8c00?text=Hoodie",
-    tag: "جدید",
+    image: "https://placehold.co/400x400/1a1a1a/FF6B00?text=Hoodie",
+    tag: "ویژه",
     colors: [{
         name: "مشکی",
         hex: "#1a1a1a",
@@ -76,7 +71,7 @@ const productsData = [{
     id: 4,
     name: "شلوار کارگو",
     category: "شلوار",
-    image: "https://placehold.co/400x400/1a1a1a/ff8c00?text=Cargo",
+    image: "https://placehold.co/400x400/1a1a1a/FF6B00?text=Cargo",
     tag: "",
     colors: [{
         name: "خاکی",
