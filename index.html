@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atomic | فروشگاه لباس</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <header>
+            <div class="logo">
+                ⚛️ Atomic<span>.</span>
+                <small>فروشگاه لباس</small>
+            </div>
+            <div class="header-actions">
+                <input type="text" id="searchInput" placeholder="جستجوی محصولات ..." />
+                <div class="cart-icon" id="cartIcon">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== FILTERS ===== -->
+        <div class="filters" id="filterContainer">
+            <button class="active" data-filter="all">همه</button>
+            <button data-filter="تیشرت">تیشرت</button>
+            <button data-filter="هودی">هودی</button>
+            <button data-filter="پیراهن">پیراهن</button>
+            <button data-filter="شلوار">شلوار</button>
+        </div>
+
+        <!-- ===== PRODUCTS ===== -->
+        <div class="products-grid" id="productsGrid"></div>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact-section">
+            <h2>📬 تماس با ما</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="نام و نام خانوادگی" required />
+                <input type="email" placeholder="ایمیل" required />
+                <textarea placeholder="پیام شما ..." required></textarea>
+                <button type="submit">ارسال پیام</button>
+            </form>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>⚛️ <strong>Atomic</strong> | تمامی حقوق محفوظ است © ۱۴۰۵</p>
+            <p style="margin-top:6px; font-size:12px;">ارسال رایگان برای خرید بالای ۱,۰۰۰,۰۰۰ تومان</p>
+        </footer>
+    </div>
+
+    <!-- ===== CART OVERLAY ===== -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-modal">
+            <h2>
+                🛒 سبد خرید
+                <button id="closeCart">✕</button>
+            </h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <span>مجموع</span>
+                <span id="cartTotalPrice">۰ تومان</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">پرداخت و ثبت سفارش</button>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

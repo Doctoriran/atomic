@@ -1,0 +1,112 @@
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-description {
+        margin: 0 auto 32px;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-title {
+        font-size: 38px;
+    }
+}
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--dark-2);
+        border-bottom: 1px solid var(--border);
+        padding: 24px;
+        transform: translateY(-120%);
+        transition: var(--transition);
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 0 0 var(--radius) var(--radius);
+    }
+    .nav-menu.open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    .nav-list a {
+        font-size: 18px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .hero-title {
+        font-size: 32px;
+    }
+    .hero-image-placeholder {
+        height: 250px;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+}
+@media (max-width: 480px) {
+    .header-container {
+        height: 60px;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .hero {
+        padding: 100px 0 40px;
+        min-height: auto;
+    }
+    .hero-title {
+        font-size: 26px;
+    }
+    .hero-description {
+        font-size: 15px;
+    }
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-card .product-body {
+        padding: 14px 16px 18px;
+    }
+    .categories-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .category-card {
+        padding: 24px 16px;
+    }
+    .category-card i {
+        font-size: 28px;
+    }
+    .footer {
+        padding: 40px 0 20px;
+    }
+}

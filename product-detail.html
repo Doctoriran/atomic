@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جزییات محصول | Atomic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+    <!-- ===== HEADER (همون هدر index.html) ===== -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">⚛️</span>
+                Atomic<span class="logo-dot">.</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="/">خانه</a></li>
+                    <li><a href="/shop.html">محصولات</a></li>
+                    <li><a href="/about.html">درباره ما</a></li>
+                    <li><a href="/contact.html">تماس با ما</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="cart-icon-wrapper" id="cartIconWrapper">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <input type="text" id="searchInput" placeholder="جستجوی محصولات ..." />
+                <button id="searchClose"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PRODUCT DETAIL ===== -->
+    <section class="product-detail" style="padding: 130px 0 60px;">
+        <div class="container">
+            <div id="productDetailContainer">
+                <!-- توسط JS ساخته می‌شود -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER (همون footer index.html) ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚛️</span>
+                    <span class="logo-text">Atomic</span>
+                    <p>فروشگاه لباس مدرن و باکیفیت</p>
+                </div>
+                <div class="footer-links">
+                    <h4>دسترسی سریع</h4>
+                    <a href="/">خانه</a>
+                    <a href="/shop.html">محصولات</a>
+                    <a href="/about.html">درباره ما</a>
+                    <a href="/contact.html">تماس</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>تماس با ما</h4>
+                    <p><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴-۵۶۷۸</p>
+                    <p><i class="fas fa-envelope"></i> info@atomicshop.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۵ تمامی حقوق برای Atomic محفوظ است</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
